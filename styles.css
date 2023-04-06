@@ -127,15 +127,16 @@ p {
 
 #hero {
     background-image: url("img/doge.png");
-    height: 100vh;
+    height: 90vh;
     width: 100%;
-    background-size: cover;
+    background: cover;
     background-color: rgba(253,224,166,255);
     object-position: normal;
-    padding: 100px 100px;
+    padding: 0px 80px;
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     background-repeat: no-repeat;
     background-position: 120% 0;
 }
@@ -143,6 +144,7 @@ p {
 #hero h4{
     padding-bottom: 15px;
 }
+/*put it in the right side*/
 #hero h1{
     color: rgba(227,110,79,255);
     position: relative;
@@ -249,7 +251,7 @@ p {
     line-height: 1;
     border-radius: 8px;
     color: rgba(227,110,79,255);
-    background-color: rgba(253,224,166,255);
+    background-color: #FFFDD0;
     border:1px solid rgba(253,224,166,255)
 }
 #feature .fe-charms img{
@@ -322,10 +324,12 @@ p {
 #product1 .section-p1{
     background-color: rgba(255,224,169,255);
 }
+/*fix dooma to not look stretched*/
 #product1 .dooma{
     width: 30vmin;
     height: 30vmin;
     border-radius: 50%;
+    object-fit: cover;
 }
 #product1 .junko{
     width: 30vmin;
@@ -393,6 +397,7 @@ p {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 .card-group:hover > .little-card:nth-child(1){
     background-image: url(img/Merchs/Kazutora.png);
@@ -403,7 +408,7 @@ p {
 }
 .card-group:hover > .little-card:nth-child(3){
     background-image: url(img/Merchs/Kokomi.png);
-    transform: translate(160%, 190%) rotate(-20deg);
+    transform: translate(200%, 200%) rotate(-20deg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
